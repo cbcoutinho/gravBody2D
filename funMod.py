@@ -50,7 +50,7 @@ def getParticles(numPar,NSteps):
 
     particles0['velocity'] = np.random.uniform(-1,1,(numPar, 2))*1.2
     #particles0['velocity'] = np.zeros((numPar, 2))
-    particles0['mass'] = np.ones(numPar)*np.random.uniform(0.5,0.1,numPar)
+    particles0['mass'] = np.ones(numPar)*np.random.uniform(5,10,numPar)
     #particles0['mass'] = np.ones(numPar)*0.01
 
     rStart = np.concatenate([particles0['position'],
