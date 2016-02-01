@@ -3,7 +3,7 @@ from numpy.linalg import norm
 from scipy.integrate import odeint
 
 def func(y,t,m):
-    G = 2.0
+    G = 0.5
     
 # Put y into array of [x,y,v_x,v_y] for every mass
     y = y.reshape(-1,4)
